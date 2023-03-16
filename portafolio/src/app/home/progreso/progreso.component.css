@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #101010;
+
+}
+svg{
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    z-index: 1000;
+}
+
+svg circle{
+width: 100%;
+height: 100%;
+fill-opacity: inherit;
+stroke: 191919;
+stroke-width: 10;
+stroke-linecap: round;
+transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+}
+.card:nth-child(1) svg circle:nth-child(2){ 
+
+    stroke: rgba(25, 25, 169, 0.656);
+}
+
